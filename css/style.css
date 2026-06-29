@@ -2184,6 +2184,19 @@ margin-bottom: 24px;
     flex-direction: column;
   }
 
+  .hero-actions {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .hero-actions .btn {
+    flex: 1 1 calc(50% - 5px);
+    min-width: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
   .service-marquee-track span {
     font-size: 18px;
   }

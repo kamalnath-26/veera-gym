@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
     const particles = [];
-    const colors = ["#ff2a1f", "#ffb000", "#ff007a", "#ffffff"];
+    const trailColor = "#ff1616";
     let width = 0;
     let height = 0;
     let mouseX = 0;
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
           size: Math.random() * 2.8 + 1,
           life: Math.random() * 34 + 28,
           maxLife: 62,
-          color: colors[Math.floor(Math.random() * colors.length)]
+          color: trailColor
         });
       }
     };
